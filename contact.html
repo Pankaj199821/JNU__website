@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Specifies the character encoding for the document -->
+    <meta charset="UTF-8">
+    <!-- Sets viewport for responsive design to adapt to various screen sizes -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website - Contact Us</title>
+    <!-- Links to the external CSS file for styling the page -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Header Section with navigation menu and page title -->
+    <section class="sub-header">
+        <nav>
+            <!-- Logo image that links to the homepage -->
+            <a href="index.html"><img src="image/logo.png" alt="University Logo"></a>
+            <!-- Navigation links menu with close button for smaller screens -->
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <!-- Links to various pages of the website -->
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="examination.html">EXAMINATION</a></li>
+                </ul>
+            </div>
+            <!-- Menu icon to show the navigation on small screens -->
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <!-- Page title displayed in the header -->
+        <h1>Contact Us</h1>
+    </section>
+
+    <!-- University Location Section with embedded Google Map -->
+    <section class="map-container">
+        <h1>Our University Location</h1>
+        <!-- Google Maps iframe showing the university location -->
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.8562197200294!2d90.37466331498158!3d23.75269428458845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c796198f7b4f%3A0x49739d7fbb5a914d!2sUniversity%20of%20Dhaka!5e0!3m2!1sen!2sbd!4v1614721664561!5m2!1sen!2sbd"
+            width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+
+    <!-- Contact Us Form Section for user inquiries -->
+    <section class="contact-us">
+        <div class="row">
+            <!-- Contact details (address, phone, and email) -->
+            <div class="contact-col">
+                <div>
+                    <i class="fa fa-home"></i>
+                    <span>
+                        <h5>Rajasthan, Jaipur</h5>
+                        <p>Rampura Tonk Road bypass, Chaksu, NH-12</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <span>
+                        <h5>6299772635</h5>
+                        <p>Monday to Saturday, 10 AM to 6 PM</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-envelope"></i>
+                    <span>
+                        <h5>ps545530@gmail.com</h5>
+                        <p>Email us your query</p>
+                    </span>
+                </div>
+            </div>
+            <!-- Contact form for users to submit their inquiries -->
+            <div class="contact-col">
+                <form method="post" action="contact-form-handler.php">
+                    <input type="text" name="name" placeholder="Enter your name" required>
+                    <input type="email" name="email" placeholder="Enter your email address" required>
+                    <input type="text" name="subject" placeholder="Enter your subject" required>
+                    <textarea rows="8" name="message" placeholder="Message" required></textarea>
+                    <button type="submit" class="hero-btn red-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section with contact info and social media icons -->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Your one-stop platform for all educational needs.</p>
+        <!-- Icons linking to various social media accounts -->
+        <div class="icons">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-linkedin"></i>
+        </div>
+        <p>Made with <i class="fa fa-heart"></i> by Pankaj Sharma</p>
+    </section>
+
+    <!-- JavaScript for toggling the navigation menu on small screens -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        // Function to display the navigation menu by setting the right position to 0
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        // Function to hide the navigation menu by setting the right position to -200px
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+
+</html>

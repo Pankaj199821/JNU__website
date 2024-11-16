@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Sets the viewport for responsive design, making the website compatible with different screen sizes -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website Design - Easy Tutorials</title>
+    <!-- Link to external CSS file for styling -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Header section with navigation and title -->
+    <section class="sub-header">
+        <nav>
+            <!-- Logo link that redirects to the homepage -->
+            <a href="index.html"><img src="image/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <!-- Close icon for the menu; calls hideMenu() to hide the navigation links -->
+                <i class="fa fa-close" onclick="hideMenu()"></i>
+                <ul>
+                    <!-- Navigation links to different pages of the website -->
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="examination.html">EXAMINATION</a></li>
+                </ul>
+            </div>
+            <!-- Menu icon for smaller screens; calls showMenu() to display the navigation links -->
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <!-- Header title -->
+        <h1>About Us</h1>
+    </section>
+
+    <!-- About us section with content and an image -->
+    <section class="about-us">
+        <div class="row">
+            <!-- Column for the text content about the university -->
+            <div class="about-col">
+                <h1>Rajasthan's largest university</h1>
+                <p>Here this is given infomation about this university.</p>
+            </div>
+            <!-- Column for the image related to the about us content -->
+            <div class="about-col">
+                <img src="image/about.jpg" width="200px;">
+            </div>
+        </div>
+    </section>
+
+    <!-- Detailed about us information -->
+    <h4>About Us</h4>
+    <p>Jagan Nath University, Jaipur has been established by an Act of the Rajasthan State Legislature (Act No. 19
+        of 2008) on April 16, 2008, approved under section 2(f) by the UGC Act, 1956, accredited by NAAC (2nd Cycle)
+        with "A" grade in 2022 and is member of the Association of Indian Universities (AIU). The University has
+        also acquired a distinctive status in agriculture education of having been accredited by ICAR for 5 years
+        its B.Sc. (Hons.) Agriculture program.
+
+        The University is offering UG and PG programs in the areas of Engineering & Technology, Architecture,
+        Management, Law, Agriculture Science, Pharmacy, Physiotherapy, Paramedical Sciences, Education and
+        Vocational Studies. The Ph.D. programs are offered in select disciplines. The University has approval from
+        various Statutory Regulatory Authorities (CoA, BCI, NCTE, PCI and UGC-DEB) for programs in respective
+        disciplines.
+
+        The University has evolved a comprehensive academic system which incorporates the latest guidelines of
+        NEP-2020 including CBCS, outcome based assessments, skill development, industry partnerships, holistic
+        eco-system, research, extension activities with focus on promoting quality higher education and
+        employability among students.</p>
+
+    <!-- Media section with images and videos related to university events -->
+    <section class="media-section">
+        <h2>All Function's Videos and Pictures</h2>
+        <!-- Image from a function -->
+        <img src="image/fun.jpg" alt="function" class="function-image" width="500px;">
+        <p>During a seminar</p>
+        <div class="video-container">
+            <!-- Video of a university event -->
+            <video controls>
+                <source src="image/video-file.1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <p>During a D.J night</p>
+    </section>
+
+    <!-- Footer section with social media links and attribution -->
+    <section class="footer">
+        <div></div>
+        <h4>About us</h4>
+        <p></p>
+        <!-- Icons linking to various social media platforms -->
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p>made <i class="fa fa-heart-o"></i> by Pankaj</p>
+    </section>
+
+    <!-- JavaScript for toggling the menu on small screens -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        // Shows the menu by setting the right style to 0
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        // Hides the menu by setting the right style to -200px
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+</body>
+
+</html>
